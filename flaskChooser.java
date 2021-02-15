@@ -35,7 +35,7 @@ public class flaskChooser{
             //for each requirement, choose the optimal marking
             int optimalMarking = optimalMarking(requirements[i], markings);
             if(optimalMarking != -1){
-                sum += optimalMarking - requirements[i]; 
+                sum += markings.get(optimalMarking) - requirements[i]; 
             } else {
                 return Integer.MAX_VALUE;
             }
